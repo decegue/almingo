@@ -96,20 +96,6 @@ button {
   border: 2px solid var(--border-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  .businesses {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 0px;
-    background-color: #a2e635cc;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: var(--font-sans);
-    font-weight: bold;
-  }
-}
-
 .businesses:hover {
   transition: all .1s ease-in-out;
   box-shadow: inset 5px 5px 10px #4e4e4e88, inset -5px -5px 10px #e2e2e288;
@@ -125,6 +111,20 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+.businesses a {
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 175px;
+    font-size: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 }
 
 .businesses a:hover {
