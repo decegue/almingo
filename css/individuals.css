@@ -21,6 +21,17 @@ section.hero {
     background-color: var(--primary-color);
 }
 
+article {
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: .2s;
+}
+
+article:hover {
+    border-color: var(--accent-color);
+}
+
 .examples {
     display: flex;
     flex-direction: row;
@@ -62,6 +73,7 @@ section.hero {
     padding-bottom: 6px;
 }
 
+
 .formulario {
     display: flex;
     flex-direction: row;
@@ -96,13 +108,35 @@ section.hero {
     color: var(--text-color);
 }
 
+.formulario form input:focus-visible,
+.formulario form textarea:focus-visible,
+.formulario form select:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 0px;
+}
+
+label {
+    padding-bottom: 6px;
+}
+
+#tipo {
+	width: 95%;
+}
+
 #enviar {
-    background-color: var(--accent-color);
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	background-color: var(--accent-color);
+	color: black;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 95%;
+	font-weight: 600;
+}
+
+#idea {
+	resize: none;
+	height: 5rem;
 }
 
 .question {

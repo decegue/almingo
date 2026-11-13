@@ -22,7 +22,7 @@
                     <br>
                     <li><a href="about.html" style="--chars:19">About</a></li>
                     <li><a href="services.html" style="--chars:19">Services</a></li>
-                    <li><a href="contact.html" style="--chars:19">Contact</a></li>
+                    <li><a href="contact.html" class="lineanimacion" style="color: var(--accent-color);">Contact</a></li>
                 </ul>
             </details>
         </nav>
@@ -93,19 +93,19 @@
             <form>
                 <h4>Request a project proposal</h4>
                 <div class="question">
-                    <label for="nombre">Company name <span class="resaltado">*</span></label>
+                    <label for="nombre">Company name</label>
                     <div>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" placeholder="Your Company">
                     </div>
                 </div>
 
                 <div class="question">
-                    <label for="mail">Work email <span class="resaltado">*</span></label>
-                    <input type="email" id="mail" name="mail">
+                    <label for="mail">Work email</label>
+                    <input type="email" id="mail" name="mail" placeholder="Email">
                 </div>
 
                 <div class="question">
-                    <label for="tipo">Type of solution <span class="resaltado">*</span></label>
+                    <label for="tipo">Type of solution</label>
                     <select id="tipo" name="tipo">
                         <option value="">Choose an option</option>
                         <option>Custom software</option>
@@ -118,7 +118,7 @@
 
                 <div class="question">
                     <label for="tipo">Company size</label>
-                    <select d="tipo" name="tipo">
+                    <select d="tipo" name="tipo" style="width: 95%;">
                         <option value="">Choose an option</option>
                         <option>1-10 employees</option>
                         <option>11-50 employees</option>
@@ -128,8 +128,8 @@
                 </div>
 
                 <div class="question">
-                    <label for="idea">Project description <span class="resaltado">*</span></label>
-                    <textarea id="idea" name="idea"></textarea>
+                    <label for="idea">Project description</label>
+                    <textarea id="idea" name="idea" placeholder="Short Description"></textarea>
                 </div>
 
                 <input type="submit" id="enviar" value="Request proposal" class="boton_enviar">

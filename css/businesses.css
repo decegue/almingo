@@ -11,6 +11,18 @@ section.hero {
     background-color: var(--bg-color);
 }
 
+article {
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: .2s;
+}
+
+article:hover {
+    border-color: var(--accent-color);
+}
+
+
 .section-services {
     display: flex;
     flex-direction: column;
@@ -59,6 +71,11 @@ section.hero {
 .problem p {
     border-bottom: 4px solid var(--border-color);
     padding-bottom: 6px;
+    transition: .2s;
+}
+
+.problem p:hover {
+    border-color: var(--accent-color);
 }
 
 .formulario {
@@ -95,13 +112,35 @@ section.hero {
     color: var(--text-color);
 }
 
+.formulario form input:focus-visible,
+.formulario form textarea:focus-visible,
+.formulario form select:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 0px;
+}
+
+label {
+    padding-bottom: 6px;
+}
+
+#tipo {
+	width: 95%;
+}
+
 #enviar {
-    background-color: var(--accent-color);
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	background-color: var(--accent-color);
+	color: black;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 95%;
+	font-weight: 600;
+}
+
+#idea {
+	resize: none;
+	height: 5rem;
 }
 
 .question {

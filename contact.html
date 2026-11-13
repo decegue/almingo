@@ -22,7 +22,7 @@
                     <br>
                     <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
                     <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
-                    <li><a href="contact.html" class="lineanimacion" style="--chars:19">Contact</a></li>
+                    <li><a href="contact.html" class="lineanimacion" style="color: var(--accent-color);">Contact</a></li>
                 </ul>
             </details>
         </nav>
@@ -32,40 +32,41 @@
 
         <div class="contact">
 
-        <section class="contact-left">
-            <form>
-                <h4>START PROJECT</h4>
-                <div class="name-lname">
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Name">
+            <section class="contact-left">
+                <form class="contact-form">
+                    <h2 class="contact-title">START PROJECT</h2>
+
+                    <div class="contact-row">
+                        <input type="text" id="name" name="name" placeholder="Name" autocomplete="given-name">
+
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" autocomplete="family-name">
                     </div>
-                    <div>
-                        <input type="text" id="LastName" name="LastName" placeholder="Last Name">
+
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
+
+                    <div class="contact-type">
+                        <legend>Who Are You?</legend>
+                        <div class="contact-type-options">
+                            <label class="contact-option">
+                                <input type="radio" name="client-type" value="business">
+                                <span>Business</span>
+                            </label>
+                            <label class="contact-option">
+                                <input type="radio" name="client-type" value="individual">
+                                <span>Individual</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                    <input type="email" id="mail" name="mail" placeholder="Email">
+                    <textarea class="textarea" id="idea" name="idea" placeholder="Describe your idea..."></textarea>
 
-                <div class="type">
-                    <div>
-                        <label for="Client_Type">Who Are You?</label>
-                    </div>
-                    <div class="cli-type">
-                        <label for="business">Business</label>
-                        <input type="checkbox" name="business" id="business">
-                        <label for="individual">Individual</label>
-                        <input type="checkbox" name="individual" id="individual">
-                    </div>
-                </div>
+                    <button type="button" class="contact-button">CONTACT</button>
+                </form>
+            </section>
 
-                <div>
-                    <textarea id="idea" name="idea" placeholder="Describe your idea...  "></textarea>
-                </div>
-
-                <input type="submit" id="enviar" value="Send message" class="boton_enviar">
-
-            </form>
-        </section>
+            <section class="contact-right">
+                <img src="img/Ilustración 3D de contacto en tonos púrpura y lima.png" alt="3D illustration of a phone with an envelope, call and location icons">
+            </section>
 
         </div>
 </main>
